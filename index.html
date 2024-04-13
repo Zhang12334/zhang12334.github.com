@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 浏览器标签上显示的网站标题 -->
+    <title>Hello</title>
+    <!-- 网站介绍 -->
+    <meta name="description" content="Zhang's个人主页">
+    <!-- 网站关键字 -->
+    <meta name="keywords" content="Zhang,个人主页,starcloud,zhang1233">
+    <!-- 浏览器标签上显示的图标 -->
+    <link rel="icon" type="image/ico" href="./static/left.png">
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./static/style.css?v=1.2.0">
+    <link rel="stylesheet" href="./static/APlayer-1.10.1/dist/APlayer.min.css">
+
+    <!-- 自定义设置 -->
+    <style>
+        body {
+            /*背景图片URL 可使用随机图片API */
+            background-image: url("https://bu.dusays.com/2022/06/04/629b0a2a89425.png");
+        }
+
+        .photo-bg {
+            /* 卡片左侧图片 */
+            background-image: url("./static/left.png");
+        }
+    </style>
+    <script>
+        // 音乐设置
+        let meting_music_api = "https://meting.170601.xyz";// meting api
+        let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
+        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "8362718673"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
+        let music_fixed = false; // 吸底模式
+        let music_volume = 0.7; // 默认音量
+        let music_autoplay = false; // 自动播放
+        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        // TODO 一言设置
+    </script>
+    <!-- end 自定义设置 -->
+</head>
+
+<body>
+    <div class="kz-video">
+        <video src="./static/video/video.mp4" autoplay="autoplay" loop muted playsinline="" webkit-playsinline=""></video>
+    </div>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <!-- 大标题 -->
+                <h1>Zhang's Website</h1>
+                <!-- 标题下的一段话 -->
+                <p>
+                    藏得这么深，还是被你发现了qwq
+                </p>
+                <p id="hitokoto_text">:D 一言来啦~</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- 导航按钮组 -->
+                        <button data-href="https://www.rainyun.com/baipiao_" data-title="Blog" data-window="newtab" data-anim="4"
+                            data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-primary col-lg-4">Rainyun</button>
+
+                        <button data-href="https://github.com/Zhang12334" data-title="GitHub" data-window="newtab"
+                            data-anim="4" data-area-w="80%" data-area-h="90%" data-shade="false"
+                            class="kz-nav-btn btn btn-secondary col-lg-4">GitHub</button>
+
+                        <button data-href="mailto:Zhang@Zhang1233.eu.org"
+                            data-title="Blog" data-window="newtab" data-anim="4" data-area-w="80%" data-area-h="90%"
+                            data-shade="false" class="kz-nav-btn btn btn-success col-lg-4">Send a Mail</button>
+
+                        <!-- end 导航按钮组 -->
+                    </div>
+                </div>
+                <!-- aplayer inner -->
+                <div id="aplayer-inner" class="aplayer"></div>
+                <!-- end aplayer inner -->
+                
+                <ul class="social mt-1">
+                    <li><a href="https://github.com/Zhang12334"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://t.me/moyu_shuang"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://t.me/moyushuangchat"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <footer>
+                    <p>Copyright 2020 - <a href="https://time.is/" target="_blank">Now</a>
+                        <a href="https://icp.gov.moe/?keyword=20246890" target="_blank">萌ICP备20246890号</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- aplayer -->
+    <div id="aplayer-fixed" class="aplayer"></div>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./static/APlayer-1.10.1/dist/APlayer.min.js"></script>
+    <script src="./static/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./static/layer-v3.5.1/layer/layer.js"></script>
+
+    <script src="./static/main.js"></script>
+    <!--websit copiright by kaygb https://github.com/kaygb-->
+</html>
